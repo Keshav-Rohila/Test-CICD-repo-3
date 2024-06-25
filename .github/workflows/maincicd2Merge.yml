@@ -44,8 +44,8 @@ jobs:
                 
             - name: 'Create delta packages for new, modified or deleted metadata'
               run: | 
-                  mkdir changed-sources
-                  sfdx sgd:source:delta --to "HEAD" --from "HEAD^" --output changed-sources/ --generate-delta --source force-app/
+                  mkdir changed-sources2
+                  sfdx sgd:source:delta --to "HEAD" --from "HEAD^" --output changed-sources2/ --generate-delta --source force-app/
 
             # Authenticate to org
             - name: 'Authenticate to Integration Org'
