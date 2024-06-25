@@ -42,10 +42,17 @@
 #               run: |
 #                   echo ${{ secrets.CICD2_SFDX_URL}} > ./CICD2_SFDX_URL.txt
                 
+<<<<<<< HEAD
 #             - name: 'Create delta packages for new, modified or deleted metadata'
 #               run: | 
 #                   mkdir changed-sources
 #                   sfdx sgd:source:delta --to "HEAD" --from "HEAD^" --output changed-sources/ --generate-delta --source force-app/
+=======
+            - name: 'Create delta packages for new, modified or deleted metadata'
+              run: | 
+                  mkdir changed-sources2
+                  sfdx sgd:source:delta --to "HEAD" --from "HEAD^" --output changed-sources2/ --generate-delta --source force-app/
+>>>>>>> 8b9ebb25db5f774e4110e8fafbad1ca45f4209d2
 
 #             # Authenticate to org
 #             - name: 'Authenticate to Integration Org'
