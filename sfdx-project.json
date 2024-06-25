@@ -5,7 +5,11 @@
       "default": true
     }
   ],
+<<<<<<< HEAD
   "name": "CICD2",
+=======
+  "name": "CICD",
+>>>>>>> e99784f9d8fc594379eb9930284d114d2e6b5c8c
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
   "sourceApiVersion": "61.0"
